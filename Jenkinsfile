@@ -17,10 +17,15 @@ pipeline {
                 echo 'code quality'
             }
          }
-             stage('code-s') {
+          stage('code-s') {
             steps {
                 echo 'code seccurity'
             }
-        }   
+        } 
+        stage('deploy') {
+            steps {
+                echo 'deploy'
+            }
+         }  
     }
 }
